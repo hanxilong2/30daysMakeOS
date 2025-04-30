@@ -119,7 +119,7 @@ graph LR
 
 #### 方案2：VMware虚拟化
 ```bash
-# 将.img转换为.vmdk
+# 将.img转换为.vmdk（需要比原项目更新的qume模拟器，自行下载，下载后找到qemu-img.exe即可，只要保证qemu-img.exe和haribote.img在同一文件夹下即可）
 qemu-img convert -f raw -O vmdk haribote.img haribote.vmdk
 
 # 新建虚拟机配置：
