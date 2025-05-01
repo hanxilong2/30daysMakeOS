@@ -117,7 +117,7 @@ graph LR
    - 启用Legacy Boot模式
    - 设置USB为第一启动设备
 
-#### 方案2：VMware虚拟化
+#### 方案2：VMware虚拟化 
 ```bash
 # 将.img转换为.vmdk（需要比原项目更新的qume模拟器，自行下载，下载后找到qemu-img.exe即可，只要保证qemu-img.exe和haribote.img在同一文件夹下即可）
 qemu-img convert -f raw -O vmdk haribote.img haribote.vmdk
@@ -126,6 +126,8 @@ qemu-img convert -f raw -O vmdk haribote.img haribote.vmdk
   类型: Other
   版本: Other
   磁盘: 使用现有虚拟磁盘 -> 选择.vmdk文件
+  
+#也可以直接在VMware中创建新的虚拟机，并使用软盘作为启动映像文件，具体操作过程可以搜索如何在VMware中启动软盘映像文件
 ```
 
 ### 四、常见问题排查表
